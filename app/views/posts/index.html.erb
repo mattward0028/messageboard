@@ -11,5 +11,6 @@
      <p class="show"><%= link_to 'Show', post %></p>
    <div>
  <% end %>
-
+<% if user_signed_in? %>
 <%= link_to 'New Post', new_post_path %>
+<% end %>
