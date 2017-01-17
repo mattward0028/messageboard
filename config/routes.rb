@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :users
-  resources :posts
+  resources :posts do
+  resources :comments
+end
   get 'static_pages/index'
 
   root 'posts#index'
