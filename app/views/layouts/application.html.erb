@@ -11,6 +11,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
 
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
   <body>
 
   	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -30,7 +33,14 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right" aria-expanded="true">
-                    <li><a>Message Board</a></li>                         
+                 <li>
+                      <% if user_signed_in? %>
+                      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                      <% else %>
+                      <%= link_to('Login', new_user_session_path) %>
+                      <% end %>
+                    </li>
+                 
                 </ul>
                 <!--End of navbar right-->
 
@@ -39,6 +49,8 @@
             </div>
             <!--End of navbar collapse-->
       </div></nav>
+      <div class="content">
     <%= yield %>
+    </div>
   </body>
 </html>
