@@ -1,0 +1,196 @@
+/* line 1, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /Users/matthew/Desktop/messageboard/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+* {
+   font-family: 'Handlee', cursive;
+   font-size: 24px;
+ }
+ p {
+ 	font-family: 'Handlee', cursive;
+ 	font-size: 24px;
+ }
+
+body {
+	background-image: url("weather.png");
+}
+
+
+
+#ancor {
+	background-color: white;
+	opacity: .5;
+	border-radius: 25px;
+}
+
+.main-title {
+	text-align: center;
+
+}
+
+.post-title{
+	text-align: center;
+}
+
+.post-show{
+	text-align:left;
+}
+
+#post-row{
+	border-top: 1px solid #eee;
+}
+
+.paginate {
+	text-align: center;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	.container {
+		width: 768px; 
+	}
+	.post-show, .post-date, .paginate{
+		text-align:center;
+	}
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.container { 
+		width: 95%; 
+	}
+	p, a{
+		font-size:18px;
+	}
+
+	.post-show, .post-date, .paginate{
+		text-align:center;
+	}
+	
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 70%;
+	}
+
+
+}
