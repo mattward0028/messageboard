@@ -13,6 +13,14 @@
  *= require_tree .
  *= require_self
  */
+* {
+   font-family: 'Handlee', cursive;
+   font-size: 24px;
+ }
+ p {
+ 	font-family: 'Handlee', cursive;
+ 	font-size: 24px;
+ }
 
 body {
 	background-image: url("weather.png");
@@ -29,5 +37,9 @@ body {
 }
 
 .main-title {
+	text-align: center;
+}
+
+#posts-home {
 	text-align: center;
 }

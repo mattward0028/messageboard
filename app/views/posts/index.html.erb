@@ -8,9 +8,8 @@
 <%=link_to 'New Post', new_post_path %>
 <% end %>
 </h2>
-
 </div>
-
+<div class="container-fluid" id="posts-home">
 <% @post.each do |post| %>
    <div class="post_wrapper">
      <h2 class="title"><%= link_to post.title, post %></h2>
@@ -20,5 +19,6 @@
  <% end %>
 
 <%= will_paginate @post %>
+</div>
 
 </div>
