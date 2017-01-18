@@ -4,13 +4,13 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @post = Post.all.order('created_at DESC')
+    @post = Post.all.order('created_at DESC').paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @comments = @post.comments.order("created_at DESC")
+    @comments = @post.comments.order("created_at DESC").paginate(:page => params[:page], per_page: 5)
   end
 
   # GET /posts/new
