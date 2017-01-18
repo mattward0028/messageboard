@@ -38,8 +38,58 @@ body {
 
 .main-title {
 	text-align: center;
+
 }
 
-#posts-home {
+.post-title{
 	text-align: center;
+}
+
+.post-show{
+	text-align:left;
+}
+
+.paginate {
+	text-align: center;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	.container {
+		width: 768px; 
+	}
+	.post-show, .post-date, .paginate{
+		text-align:center;
+	}
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.container { 
+		width: 95%; 
+	}
+	p, a{
+		font-size:18px;
+	}
+
+	.post-show, .post-date, .paginate{
+		text-align:center;
+	}
+	
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 70%;
+	}
+
+
 }
