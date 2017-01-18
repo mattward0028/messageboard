@@ -13,6 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+	background-image: url("weather.png");
+}
+
 .content {
 	padding-top: 51px;
+}
+
+#ancor {
+	background-color: white;
+	opacity: .6;
+	border-radius: 25px;
+}
+
+.main-title {
+	text-align: center;
 }

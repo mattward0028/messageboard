@@ -9,6 +9,8 @@
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <p class="notice"><%= notice %></p>
@@ -27,7 +29,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div class="projectName navbar-brand">
-                    <a href="#">Home</a>
+                    <a><%= link_to "Home", posts_path %></a>
                 </div>
                 <!--End of project-->
             </div>
