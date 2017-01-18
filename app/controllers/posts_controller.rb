@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @comments = @post.comments.order("created_at DESC").paginate(:page => params[:page], per_page: 5)
+    @comments = @post.comments.order("created_at ASC").paginate(:page => params[:page], per_page: 5)
   end
 
   # GET /posts/new
